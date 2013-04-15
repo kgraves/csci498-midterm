@@ -21,10 +21,11 @@
       <div class="large-12 columns">
         <form id="user_form">
           <fieldset>
-            <input id="user_login" type="text" placeholder="Login">
-            <input id="user_url" type="text" placeholder="URL">
+            <input id="user_id" type="hidden" value="" >
+            <input id="user_login" type="text" placeholder="Login" >
+            <input id="user_url" type="text" placeholder="URL" >
 
-            <input id="user_form_submit" type="submit" value="Add" />
+            <input id="user_form_submit" type="submit" value="Update" />
           </fieldset>
         </form>
       </div>
@@ -38,9 +39,10 @@
               <th>ID</th>
               <th>Login</th>
               <th>URL</th>
+              <th></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="users_tbody">
           </tbody>
         </table>
       </div>
