@@ -8,24 +8,43 @@
     <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
     <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/backbone.modelbinder/0.1.6/Backbone.ModelBinder.min.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/foundation/4.1.2/css/foundation.min.css" >
+    <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/foundation/4.1.2/js/foundation.min.js'></script>
+
     <script type='text/javascript' src='sqlite.js'></script>
     <script type='text/javascript' src='app.js'></script>
   </head>
 
   <body>
-    <div id="main_content">
-      <p>hello</p>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <form id="user_form">
+          <fieldset>
+            <input id="user_login" type="text" placeholder="Login">
+            <input id="user_url" type="text" placeholder="URL">
+
+            <input id="user_form_submit" type="submit" value="Add" />
+          </fieldset>
+        </form>
+      </div>
     </div>
 
-    <!--
-    <script type="text/javascript">
-      UserView = Backbone.View.extend({
-        initialize: function(){ }
-      });
-
-      var user_view = new UserView({ el: $("#main_content") });
-    </script>
-    -->
+    <div class="row">
+      <div class="large-12 columns">
+        <table id="main_content" class="large-12 columns">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Login</th>
+              <th>URL</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
   </body>
 
